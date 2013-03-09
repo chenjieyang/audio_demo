@@ -149,9 +149,9 @@ if (!c_audio) var c_audio = function(obj)
 				console.log(xhr.status);
 				_response_ajax(p.target, data);
 			}, 			
-			error:function(xhr, options, error)
+			error:function(xhr, options, error, p)
 			{				
-				if (xhr.status == 0)
+				if (xhr.status == 200)
 				{
 					_response_ajax(p.target, data);
 				}
