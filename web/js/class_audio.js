@@ -129,28 +129,63 @@ if (!c_audio) var c_audio = function(obj)
 		
 		p.target;  	// sets the target element		
 		
-		$.ajaxSetup(
+		if (p.mode == "non-ajax")
 		{
-			timeout:0 // optional timeout *note (set to no timeout) 
-		});
-		 					 	
-		$.ajax(
+			sys.$downloads = $("#downloads");
+			sys.$downloads_cont = $("#downloads_cont");
+			sys.$downloads_restart = $("#downloads_restart");
+			sys.$downloads.available({ "func":function()
+			{
+				if (p.target == "popup")
+				{
+					sys.$downloads.css({"display":"block"});
+					
+					var $bg = sys.$downloads.find(".bg");
+					var $cms = sys.$downloads.find(".cms");
+					var $iframe = $cms.find("iframe");
+					
+					var cms_ww = Math.round($cms.outerWidth());
+					var cms_hh = Math.round($cms.outerHeight());
+					var doc_hh = Math.round(sys.$doc.height());
+					var win_hh = Math.round(sys.$doc.height());
+									
+					$bg.bind("click", function() { sys.$downloads.hide(); });
+					sys.$downloads_cont.bind("click", function() { sys.$downloads.hide(); });
+					sys.$downloads_restart.bind("click", function() 
+					{ 	
+						$iframe.attr("src", p.url+"?action="+p.data.action+"&author="+p.data.author+"&title="+p.data.title+"&format="+p.data.format+"&items="+p.data.items); 
+					});
+					
+					$cms.css({"position":"absolute", "top":Math.round((sys.data.res_h - cms_hh)/2)+"px", "left":(Math.round(sys.data.res_w/2) - Math.round(cms_ww/2))+"px"});
+					$iframe.attr("src", p.url+"?action="+p.data.action+"&author="+p.data.author+"&title="+p.data.title+"&format="+p.data.format+"&items="+p.data.items);
+				}
+			}}); 
+		}
+		else
 		{
-			url:p.url,
-			dataType:p.dataType,
-			type:p.type,
-			async:p.async,
-			data:p.data,			
-			cache:p.cache, 
-			success:function(data) // using function prevents collision of single thread like event
-			{				
-				_response_ajax(p.target, data);
-			}, 			
-			error:function(xhr, options, error)
-			{				
-				_request_ajax_error(xhr, options, error);
-			}						
-		});
+			$.ajaxSetup(
+			{
+				timeout:0 // optional timeout *note (set to no timeout) 
+			});
+			 					 	
+			$.ajax(
+			{
+				url:p.url,
+				dataType:p.dataType,
+				type:p.type,
+				async:p.async,
+				data:p.data,			
+				cache:p.cache, 
+				success:function(data) // using function prevents collision of single thread like event
+				{				
+					_response_ajax(p.target, data);
+				}, 			
+				error:function(xhr, options, error)
+				{				
+					_request_ajax_error(xhr, options, error);
+				}						
+			});
+		}
 	}
 	
 	function _response_ajax(target, data)
