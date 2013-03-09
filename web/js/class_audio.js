@@ -145,11 +145,13 @@ if (!c_audio) var c_audio = function(obj)
 			data:p.data,			
 			cache:p.cache, 
 			success:function(data) // using function prevents collision of single thread like event
-			{				
+			{	
+				console.log(xhr.status);
 				_response_ajax(p.target, data);
 			}, 			
 			error:function(xhr, options, error)
-			{				
+			{	
+				console.log(xhr.status);
 				_request_ajax_error(xhr, options, error);
 			}						
 		});
