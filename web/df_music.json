@@ -1,0 +1,160 @@
+[
+  {
+    "summary": {
+      "title": "Dusk's Holy Mark",
+      "author": "Michiru Yamane, Yasuhiro Ichihashi",
+      "type": "single",
+      "date": "2008",
+      "format": "music",
+      "pic": "aud/singles/sample_01.jpg"
+    },
+    "details": [
+      {
+        "track": "1",
+        "filename": "aud/singles/101 Dusk's Holy Mark",
+        "title": "Dusk's Holy Mark",
+        "time": "00:01:09",
+        "featuring": null
+      }
+    ]
+  },
+  {
+    "summary": {
+      "title": "Testudo Quietude",
+      "author": "Michiru Yamane, Yasuhiro Ichihashi",
+      "type": "single",
+      "date": "2008",
+      "format": "music",
+      "pic": "aud/singles/sample_02.jpg"
+    },
+    "details": [
+      {
+        "track": "1",
+        "filename": "aud/singles/102 Testudo Quietude",
+        "title": "Testudo Quietude",
+        "time": "00:01:59",
+        "featuring": null
+      }
+    ]
+  },
+  {
+    "summary": {
+      "title": "Decants of Dawn",
+      "author": "Michiru Yamane, Yasuhiro Ichihashi",
+      "type": "single",
+      "date": "2008",
+      "format": "music",
+      "pic": "aud/singles/sample_03.jpg"
+    },
+    "details": [
+      {
+        "track": "1",
+        "filename": "aud/singles/103 Decants of Dawn",
+        "title": "Decants of Dawn",
+        "time": "00:02:21",
+        "featuring": null
+      }
+    ]
+  },
+  {
+    "summary": {
+      "title": "Ecclesia - Prologue",
+      "author": "Michiru Yamane, Yasuhiro Ichihashi",
+      "type": "single",
+      "date": "2008",
+      "format": "music",
+      "pic": "aud/singles/sample_04.jpg"
+    },
+    "details": [
+      {
+        "track": "1",
+        "filename": "aud/singles/104 Ecclesia - Prologue",
+        "title": "Ecclesia - Prologue",
+        "time": "00:01:36",
+        "featuring": null
+      }
+    ]
+  },
+  {
+    "summary": {
+      "title": "Akumajo",
+      "author": "Michiru Yamane, Yasuhiro Ichihashi",
+      "type": "albums",
+      "date": "2008",
+      "format": "music",
+      "pic": "aud/albums/Akumajo/sample_05.jpg"
+    },
+    "details": [
+      {
+        "track": "1",
+        "filename": "aud/albums/Akumajo/201 Old Grudge of the Lord's Castle",
+        "title": "Old Grudge of the Lord's Castle",
+        "time": "00:01:15",
+        "featuring": null
+      },
+      {
+        "track": "2",
+        "filename": "aud/albums/Akumajo/202 Waltz of the Evening Moon",
+        "title": "Waltz of the Evening Moon",
+        "time": "00:03:09",
+        "featuring": null
+      },
+      {
+        "track": "3",
+        "filename": "aud/albums/Akumajo/203 Fantasia of Beautiful Dreams",
+        "title": "Fantasia of Beautiful Dreams",
+        "time": "00:01:57",
+        "featuring": null
+      },
+      {
+        "track": "4",
+        "filename": "aud/albums/Akumajo/204 Dusk's Holy Mark",
+        "title": "Dusk's Holy Mark",
+        "time": "00:03:00",
+        "featuring": null
+      },
+      {
+        "track": "5",
+        "filename": "aud/albums/Akumajo/205 Prediction of Insanity",
+        "title": "Prediction of Insanity",
+        "time": "00:02:45",
+        "featuring": null
+      },
+      {
+        "track": "6",
+        "filename": "aud/albums/Akumajo/206 Malach's Labyrinth",
+        "title": "Malach's Labyrinth",
+        "time": "00:03:20",
+        "featuring": null
+      },
+      {
+        "track": "7",
+        "filename": "aud/albums/Akumajo/207 Jet Black Wings",
+        "title": "Jet Black Wings",
+        "time": "00:02:24",
+        "featuring": null
+      },
+      {
+        "track": "8",
+        "filename": "aud/albums/Akumajo/208 the Tower of Dolls",
+        "title": "The Tower of Dolls",
+        "time": "00:02:25",
+        "featuring": null
+      },
+      {
+        "track": "9",
+        "filename": "aud/albums/Akumajo/209 Gate to Hell",
+        "title": "Gate to Hell",
+        "time": "00:02:16",
+        "featuring": null
+      },
+      {
+        "track": "10",
+        "filename": "aud/albums/Akumajo/210 Gargantua",
+        "title": "Gargantua",
+        "time": "00:03:01",
+        "featuring": null
+      }
+    ]
+  }
+]

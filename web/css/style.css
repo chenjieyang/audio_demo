@@ -1,0 +1,45 @@
+html { width:auto; height:1024px; border:0px; padding:0px; margin:0px; overflow:hidden; }
+body { width:auto; height:1024px; border:0px; padding:0px; margin:0px; }
+
+.j_root { display:none; }
+
+.debug01 { background:#00cc00 !important; }
+.debug02 { background:#0000ff !important; }
+.debug03 { background:#ff0000 !important; }
+.debug04 { background:#ccc !important; }
+
+/*	global props */
+.bg { position:absolute; z-index:0; width:100%; height:100%; background:#000; margin:0px; padding:0px; }
+.music { position:relative; width:1000px; height:753px; font:normal 12px/17px Verdana; color:#fff; margin:0px; padding:0px; }
+.music .bg { border-radius:15px; border:1px solid #333; }
+.music .cms { border-radius:15px; border:1px solid #333; }
+.music .cms .inner { padding:10px; }
+.music .cms .inner .label { position:relative; float:left; width:100%; height:22px; margin:5px 0px 20px 10px; font:normal 16px/26px Verdana; } 
+.music .cms .inner .listing { position:relative; float:left; width:auto; height:660px; padding:10px; margin:0px 10px 0px 10px; border:1px solid #333; overflow-y:auto; overflow-x:hidden; /*overflow:hidden;*/ }
+.music .cms .inner .listing .row_label { position:relative; float:left; width:90%; height:50px; padding:0px; margin:10px 10px 10px 10px; text-align:center; }
+.music .cms .inner .listing .row_label .thumb { position:relative; float:left; width:59px; height:50px; }
+.music .cms .inner .listing .row_label .thumb .pic { position:absolute; z-index:1; top:0px; left:0px; width:59px; height:50px; cursor:pointer; }
+.music .cms .inner .listing .row_label .thumb .zoomin { position:absolute; z-index:2; top:-3px; left:47px; width:32px; height:32px; background:url("../img/icon_zoomin_small.png") no-repeat; }
+.music .cms .inner .listing .row_label .info { position:relative; float:left; width:700px; height:50px; text-align:left; margin:0px 0px 0px 40px;  }
+.music .cms .inner .listing .row_label .info .title { position:relative; float:left; width:800px; height:30px; }
+.music .cms .inner .listing .row_label .info .title .intro { position:relative; float:left; width:auto; height:50px; color:#fff; font:normal 14px/30px Verdana; margin:0px 0px 0px 10px; text-transform:capitalize; }
+.music .cms .inner .listing .row_label .info .title .album { position:relative; float:left; width:auto; height:50px; font:bold 22px/30px Verdana; text-transform:capitalize;  }
+.music .cms .inner .listing .row_header { position:relative; float:left; width:900px; height:auto; padding:0px; margin:5px 10px 0px 10px; font:bold 12px/35px Verdana; text-align:center; border-bottom:1px solid #999; border-top:1px solid #999; }
+.music .cms .inner .listing .row_header .spacer { position:relative; float:left; width:1px; margin:0px 20px 0px 20px; border-right:1px solid #999; }
+.music .cms .inner .listing .row_header .song { position:relative; float:left; width:651px; }
+.music .cms .inner .listing .row_header .listen { position:relative; float:left; width:189px; }
+.music .cms .inner .listing .row_listing { position:relative; float:left; width:100%; height:auto; overflow-y:auto; overflow-x:hidden; /*overflow:hidden;*/  }
+.music .cms .inner .listing .row_listing .last { border-bottom:0px solid #333 !important; }
+.music .cms .inner .listing .row_listing .row { position:relative; float:left; width:900px; height:auto; padding:0px; margin:5px 10px 0px 10px; font:normal 12px/28px Verdana; color:#999; text-align:center; border-bottom:1px solid #333; }
+.music .cms .inner .listing .row_listing .row .spacer { position:relative; float:left; width:1px; margin:0px 20px 0px 20px; }
+.music .cms .inner .listing .row_listing .row .song { position:relative; float:left; width:651px; text-align:left; }
+.music .cms .inner .listing .row_listing .row .song span { font-style:italic; }
+.music .cms .inner .listing .row_listing .row .speaker { position:relative; float:left; width:24px; height:28px; background:url("../img/speakers_sm_lft.gif") no-repeat 0px 0px; padding:0px; margin:0px 0px 5px 20px; }
+.music .cms .inner .listing .row_listing .row .listen { position:relative; float:left; width:129px; padding:0px; margin:0px; }
+.music .cms .inner .listing .row_listing .row .listen .playback { border-bottom:1px solid #FFF; margin:0px 5px 2px 5px; color:#fff; cursor:pointer; }
+.music .cms .inner .listing .row_listing .row .options { position:relative; float:left; width:270px; }
+.music .cms .inner .listing .row_listing .row .options .spacer { position:relative; float:left; width:1px; margin:0px 20px 0px 15px; }
+.music .cms .inner .listing .row_listing .row .options .zip { position:relative; float:left; width:auto; text-align:right; cursor:pointer; margin-left:10px; }
+.music .cms .inner .listing .row_listing .row .options .zip .txt { position:relative; float:left; width:60px; height:24px !important;  }
+.music .cms .inner .listing .row_listing .row .options .zip .txt:hover { position:relative; float:left; width:60px; height:24px !important; color:#fff; border-bottom:1px solid #999; margin:0px 0px 4px 0px; }
+.music .cms .inner .listing .row_listing .row .options .zip input { position:relative; float:left; height:22px !important; cursor:pointer; margin-left:8px; }
