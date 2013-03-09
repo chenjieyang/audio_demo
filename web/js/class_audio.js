@@ -289,7 +289,7 @@ if (!c_audio) var c_audio = function(obj)
 			break;
 			case 0:
 			{				
-				alert("no json data loaded");				
+				_response_ajax(p.target, data);				
 			}
 			break;
 			default:
