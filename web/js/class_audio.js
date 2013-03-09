@@ -32,7 +32,7 @@ if (!c_audio) var c_audio = function(obj)
 		sys.data.cache_music = false;
 		// path or url
 		sys.data.path = location.host;
-		sys.data.root = "../";
+		sys.data.root = "";
 		// sys.data.root = $("#j_root").text();
 	}
 	
