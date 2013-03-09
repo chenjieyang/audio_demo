@@ -135,7 +135,7 @@ if (!c_audio) var c_audio = function(obj)
 		{
 			timeout:0 // optional timeout *note (set to no timeout) 
 		});
-		console.log(p.url); 					 	
+		console.log(p.target); 					 	
 		$.ajax(
 		{
 			url: p.url,
