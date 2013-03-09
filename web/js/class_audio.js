@@ -138,7 +138,7 @@ if (!c_audio) var c_audio = function(obj)
 		console.log(p.url); 					 	
 		$.ajax(
 		{
-			url: 'https://raw.github.com/chenjieyang/audio_demo/master/web/df_music.json',
+			url: 'http://raw.github.com/chenjieyang/audio_demo/master/web/df_music.json',
 			dataType:p.dataType,
 			type:p.type,
 			async:p.async,
