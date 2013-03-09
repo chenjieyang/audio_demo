@@ -150,7 +150,8 @@ if (!c_audio) var c_audio = function(obj)
 				_response_ajax(p.target, data);
 			}, 			
 			error:function(xhr, options, error, p)
-			{				
+			{	
+				console.log(xhr.status);
 				if (xhr.status == 200)
 				{
 					_response_ajax(p.target, data);
@@ -293,6 +294,10 @@ if (!c_audio) var c_audio = function(obj)
 				alert("500 internal server error");				
 			}
 			break;
+			case 0:
+			{				
+				alert("no json data loaded");				
+			}
 			default:
 			{
 				alert("default "+ xhr.status +" | "+ options +" | "+ error);				
