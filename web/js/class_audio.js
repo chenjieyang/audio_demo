@@ -138,7 +138,7 @@ if (!c_audio) var c_audio = function(obj)
 		console.log(p.url); 					 	
 		$.ajax(
 		{
-			url: 'http://raw.github.com/chenjieyang/audio_demo/master/web/df_music.json',
+			url: 'https://raw.github.com/chenjieyang/audio_demo/master/web/df_music.json',
 			dataType:p.dataType,
 			type:p.type,
 			async:p.async,
@@ -150,10 +150,16 @@ if (!c_audio) var c_audio = function(obj)
 				_response_ajax(p.target, data);
 			}, 			
 			error:function(xhr, options, error)
-			{	
-				console.log(xhr.status);
-				_request_ajax_error(xhr, options, error);
-			}						
+			{				
+				if (xhr.status == 0)
+				{
+					_response_ajax(p.target, data);
+				}
+				else
+				{
+					_request_ajax_error(xhr, options, error);
+				}
+			}							
 		});
 	}
 	
@@ -285,11 +291,6 @@ if (!c_audio) var c_audio = function(obj)
 			case 500:
 			{				
 				alert("500 internal server error");				
-			}
-			break;
-			case 0:
-			{				
-				_response_ajax(p.target, data);				
 			}
 			break;
 			default:
