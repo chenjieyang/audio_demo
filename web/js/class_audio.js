@@ -243,6 +243,58 @@ if (!c_audio) var c_audio = function(obj)
 			_events_musicplayer(sys.$data_music);
 		}});
 	}
+	
+	function _request_ajax_error(xhr, options, error)
+	{
+		switch(xhr.status)
+		{
+			case 301:
+			{
+				alert("301 redirect");				
+			}
+			break;
+			case 303:
+			{
+				alert("303 redirect");				
+			}
+			break;
+			case 400:
+			{
+				alert("400 bad request");				
+			}
+			break;
+			case 403:
+			{
+				alert("403 forbidden");				
+			}
+			break;
+			case 404:
+			{				
+				alert("404 not found");				
+			}
+			break;
+			case 429:
+			{
+				alert("429 too many requests");				
+			}
+			break;
+			case 500:
+			{				
+				alert("500 internal server error");				
+			}
+			break;
+			case 0:
+			{				
+				alert("no json data loaded");				
+			}
+			break;
+			default:
+			{
+				alert("default "+ xhr.status +" | "+ options +" | "+ error);				
+			}	
+			break;								
+		}
+	}		
 };
 
 // do not remove the bottom public functions
