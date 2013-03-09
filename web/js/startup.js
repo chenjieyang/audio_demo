@@ -9,7 +9,7 @@ if (url.indexOf("localhost") > -1);
 // css
 document.write('<link rel="stylesheet" type="text/css" href="'+root+'css/style.css" />');			
 // js code
-document.write('<script type="text/javascript" src="'+root+'js/libs/jquery/jquery-1.7.js"></script>');
+document.write('<script type="text/javascript" src="'+root+'js/libs/jquery/jquery-1.8.1.js"></script>');
 // js jquery ui 
 document.write('<script type="text/javascript" src="'+root+'js/libs/jquery/ui/jquery.ui.core.js"></script>');
 document.write('<script type="text/javascript" src="'+root+'js/libs/jquery/ui/jquery.ui.widget.js"></script>');
