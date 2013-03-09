@@ -137,7 +137,7 @@ if (!c_audio) var c_audio = function(obj)
 		 					 	
 		$.ajax(
 		{
-			url: 'http://htmlpreview.github.com/?https://github.com/chenjieyang/audio_demo/blob/master/web/df_music.json',
+			url: p.url,
 			dataType:p.dataType,
 			type:p.type,
 			async:p.async,
