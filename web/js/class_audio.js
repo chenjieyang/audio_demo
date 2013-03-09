@@ -90,7 +90,6 @@ if (!c_audio) var c_audio = function(obj)
 		sys.$tmusic.show();
 		if (!sys.data.cache_music) 
 		{
-			console.log("music event");
 			_request_ajax({ "url":"https://raw.github.com/chenjieyang/audio_demo/master/web/df_music.json", "cache":"true", "target":"music" });
 			sys.data.cache_music = true;
 		}
@@ -137,7 +136,7 @@ if (!c_audio) var c_audio = function(obj)
 			timeout:0 // optional timeout *note (set to no timeout) 
 		});
 		
-		console.log("sending ajax");
+		console.log(p.data);
 		$.ajax(
 		{
 			url: p.url,
