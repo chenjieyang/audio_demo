@@ -151,15 +151,15 @@ if (!c_audio) var c_audio = function(obj)
 			}, 			
 			error:function(xhr, options, error, p)
 			{	
-				console.log(xhr.status);
-				if (xhr.status == 200)
-				{
-					_response_ajax(p.target, data);
-				}
-				else
-				{
+				console.log("status "+xhr.status);
+				// if (xhr.status == 200)
+				// {
+				//	_response_ajax(p.target, data);
+				// }
+				// else
+				//{
 					_request_ajax_error(xhr, options, error);
-				}
+				//}
 			}							
 		});
 	}
